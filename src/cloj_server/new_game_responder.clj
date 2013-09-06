@@ -20,7 +20,7 @@
   (.setInputStream response (new ByteArrayInputStream (.getBytes body-string))))
 
 (defn add-game-to-hash [game-map game]
-  (.put game-map (Integer/toString (.getID game)) game))
+  (.put game-map (.getID game) game))
 
 (defn run-game-loop [post-map game]
   (.runGameLoop game
@@ -49,6 +49,7 @@
 (defn get-game-from-hash [game-map post-map]
   (.get game-map (.get post-map "board_id")))
 
+
 (defn record-player-choice [post-map game]
   (.recordChoice (.getBoard game)
     (read-string (.get post-map "move"))
@@ -67,7 +68,7 @@
 
 (defn get-new-game [post-map factory]
   (.getGame factory
-    1
+    (str (gensym))
     (.getBoard factory (.get post-map "game_type"))
     (.getPlayer factory (.get post-map "player1") "X")
     (.getPlayer factory (.get post-map "player2") "O")))

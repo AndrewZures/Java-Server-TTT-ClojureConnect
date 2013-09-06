@@ -105,10 +105,11 @@
       (should= 3 (.getRowLength (.getBoard game)))))
 
   (it "adds game to hash"
-    (let [map (new HashMap {String Game})]
+    (let [map (new HashMap {String Game})
+          game (get-test-game)]
       (should= 1 (.size map))
-      (add-game-to-hash map (get-test-game))
-      (should= true (.containsKey map "1"))
+      (add-game-to-hash map game)
+      (should= true (.containsKey map (.getID game)))
       (should= 2 (.size map)))))
 
 (describe "move-handler"
@@ -131,7 +132,7 @@
           post-map (get-valid-move-hash)
           game-string (build-game-string game)]
       (should-contain
-        "<input type=\"hidden\" name=\"board_id\" value=\"1\" />"
+        (format "<input type=\"hidden\" name=\"board_id\" value=\"%s\" />" (.getID game))
         game-string)
       (should-contain
         "<input type=\"hidden\" name=\"player\" value=\"X\"/>"
@@ -146,7 +147,7 @@
                         (.get post-map "move"))
                       ))
       (should-contain
-        "<input type=\"hidden\" name=\"board_id\" value=\"1\" />"
+        (format "<input type=\"hidden\" name=\"board_id\" value=\"%s\" />" (.getID game))
         (build-game-string game))
       (should-contain
         "<input type=\"hidden\" name=\"player\" value=\"O\"/>"
@@ -172,12 +173,4 @@
       (should-contain
         "<input type=\"submit\" name=\"move\" value=\"2\" /><br />"
         (build-game-string game))
-      ))
-
-  (it "adds break to string collection"
-    (let [game (get-test-game)
-          post-map (get-valid-move-hash)]
-      (should= nil (println (add-breaks-to-game-string game (get-board-array-string game))))
-    )
-
-    ))
+      )))

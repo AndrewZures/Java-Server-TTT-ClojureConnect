@@ -2,20 +2,14 @@
   (:import [org.andrewzures.javaserver.server_and_sockets Server MyServerSocket]
            [org.andrewzures.javaserver.responders DefaultInternalResponder ResponderInterface]
            [org.andrewzures.javaserver Logger PostParser ArgumentParser]
-           [tttmiddleware.stringbuilders GameStringBuilder]
-           [tttmiddleware.gameresponders NewGameResponder MoveResponder]
            [java.util HashMap]
            [java.lang.String])
   (:require [cloj-server.new-game-responder :refer :all]))
 
-
-
-
 (defn -main [& args]
   (let [parser (new ArgumentParser (into-array String args))
         server (new Server (.getPort parser) (.getPath parser) (new MyServerSocket) (new Logger))
-        map (new HashMap {String ResponderInterface})
-        ]
+        map (new HashMap {String ResponderInterface})]
 
     (.addRoute server "get" "/hello" (DefaultInternalResponder. "welcome.html"))
     (.addRoute server "get" "/new_game" (DefaultInternalResponder. "introduction.html"))
