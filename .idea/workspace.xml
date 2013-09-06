@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tttmiddleware/Driver.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tttmiddleware/Java_Game.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tttmiddleware/gameresponders/IntroResponder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tttmiddleware/gameresponders/MoveResponder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tttmiddleware/gameresponders/NewGameResponder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tttmiddleware/stringbuilders/GameStringBuilder.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cloj_server/core.clj" afterPath="$PROJECT_DIR$/src/cloj_server/core.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cloj_server/new_game_responder.clj" afterPath="$PROJECT_DIR$/src/cloj_server/new_game_responder.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/cloj_server/new_game_responder_spec.clj" afterPath="$PROJECT_DIR$/spec/cloj_server/new_game_responder_spec.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="project.clj.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -140,9 +133,10 @@
     <file path="/Driver.java" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1378410611457" ignored="false" />
     <file path="/NewGameResponder.java" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1378441177338" ignored="false" />
     <file path="/move-responder.clj" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1378477091868" ignored="false" />
-    <file path="/new-game-responder.clj" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1378489825797" ignored="false" />
+    <file path="/new-game-responder.clj" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1378499496249" ignored="false" />
     <file path="/Board.java" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1378479475307" ignored="false" />
-    <file path="/new-game-responder_spec.clj" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1378496257675" ignored="false" />
+    <file path="/new-game-responder_spec.clj" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1378499355692" ignored="false" />
+    <file path="/new_game_responder.clj" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1378499087071" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,22 +197,22 @@
     <favorites_list name="project.clj" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.50252783">
+    <splitter split-orientation="horizontal" split-proportion="0.41869918">
       <split-first>
         <leaf>
           <file leaf-file-name="core.clj" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/cloj_server/core.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="57" selection-start="522" selection-end="522" vertical-scroll-proportion="-4.8">
+                <state line="11" column="0" selection-start="526" selection-end="526" vertical-scroll-proportion="-5.6">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="new_game_responder.clj" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="new_game_responder.clj" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/cloj_server/new_game_responder.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="78" column="8" selection-start="2781" selection-end="2781" vertical-scroll-proportion="0.4878049">
+                <state line="83" column="23" selection-start="3039" selection-end="3039" vertical-scroll-proportion="0.7118644">
                   <folding />
                 </state>
               </provider>
@@ -228,10 +222,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="new_game_responder_spec.clj" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="new_game_responder_spec.clj" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/spec/cloj_server/new_game_responder_spec.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="162" column="41" selection-start="5753" selection-end="5753" vertical-scroll-proportion="0.75609756">
+                <state line="180" column="5" selection-start="6363" selection-end="6363" vertical-scroll-proportion="0.80487806">
                   <folding />
                 </state>
               </provider>
@@ -271,8 +265,8 @@
         <option value="$PROJECT_DIR$/src/cloj_server/new-game-responder.clj" />
         <option value="$PROJECT_DIR$/spec/cloj_server/core_spec.clj" />
         <option value="$PROJECT_DIR$/src/cloj_server/core.clj" />
-        <option value="$PROJECT_DIR$/src/cloj_server/new_game_responder.clj" />
         <option value="$PROJECT_DIR$/spec/cloj_server/new_game_responder_spec.clj" />
+        <option value="$PROJECT_DIR$/src/cloj_server/new_game_responder.clj" />
       </list>
     </option>
   </component>
@@ -369,66 +363,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="cloj_server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project.clj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloj_server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project.clj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloj_server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloj_server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project.clj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloj_server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project.clj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloj_server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -746,7 +680,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="5" y="22" width="1280" height="774" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -768,7 +702,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2012987" sideWeight="0.67431194" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2012987" sideWeight="0.67431194" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2148071" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -894,20 +828,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cloj_server/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="57" selection-start="522" selection-end="522" vertical-scroll-proportion="-4.8">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cloj_server/new_game_responder.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="8" selection-start="2781" selection-end="2781" vertical-scroll-proportion="0.4878049">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tttmiddleware/interfaces/TTTFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="17" selection-start="52" selection-end="52" vertical-scroll-proportion="0.048780486">
@@ -915,9 +835,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cloj_server/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="526" selection-end="526" vertical-scroll-proportion="-5.6">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spec/cloj_server/new_game_responder_spec.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="162" column="41" selection-start="5753" selection-end="5753" vertical-scroll-proportion="0.75609756">
+        <state line="180" column="5" selection-start="6363" selection-end="6363" vertical-scroll-proportion="0.80487806">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cloj_server/new_game_responder.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="23" selection-start="3039" selection-end="3039" vertical-scroll-proportion="0.7118644">
           <folding />
         </state>
       </provider>

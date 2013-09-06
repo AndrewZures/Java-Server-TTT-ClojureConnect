@@ -60,6 +60,11 @@
       [(format "<br>Winner is %s" (.checkBoardStatus (.getBoard game)))
        "<br><a href=\"new_game\">New Game</a>" ""])))
 
+(defn add-breaks-to-game-string [game game-string]
+  (let [row-length (.getRowLength (.getBoard game))
+        new-list (partition row-length game-string)]
+    (apply concat (map #(concat % '("<br />")) new-list))))
+
 (defn get-new-game [post-map factory]
   (.getGame factory
     1
@@ -75,8 +80,7 @@
          (.getSymbol (.getCurrentPlayer game)))
        (format "<input type=\"hidden\" name=\"board_id\" value=\"%s\" />"
          (.getID game))
-       (apply str (get-board-array-string game))
-       ;(apply str (add-breaks-to-game-string game (get-board-array-string game)))
+       (apply str (add-breaks-to-game-string game (get-board-array-string game)))
        "</form>"
        (add-game-over-string game)
        "</body></html>"

@@ -164,4 +164,20 @@
       (should-contain
       "<input type=\"submit\" name=\"move\" value=\"2\" /><br />"
       (build-game-string game))
-      )))
+      ))
+
+  (it "has <br /> points after fourth element for 4x4 board"
+    (let [game (get-test-game)
+          post-map (get-valid-move-hash)]
+      (should-contain
+        "<input type=\"submit\" name=\"move\" value=\"2\" /><br />"
+        (build-game-string game))
+      ))
+
+  (it "adds break to string collection"
+    (let [game (get-test-game)
+          post-map (get-valid-move-hash)]
+      (should= nil (println (add-breaks-to-game-string game (get-board-array-string game))))
+    )
+
+    ))

@@ -9,12 +9,7 @@
   (:require [cloj-server.new-game-responder :refer :all]))
 
 
-;(defn add-breaks-to-game-string [game game-string]
-;  (let [row-length (.getRowLength (.getBoard game))
-;        new-list (partition row-length game-string)]
-;;    (apply #(conj % "<br />") new-list)
-;    (#(conj % "<br />") new-list)
-;    ))
+
 
 (defn -main [& args]
   (let [parser (new ArgumentParser (into-array String args))
