@@ -15,8 +15,37 @@
   (:import [java.lang.String])
   )
 
-(defn ttt-factory [] (.evalScriptlet (Ruby/newInstance) "require 'jfactory'; JFactory.new"))
 
+(defn get-board-array-string [game]
+  (let [board (.getBoardArray (.getBoard game))]
+    (for [x (range 0 (alength board))]
+      (if (= "open" (aget board x))
+        (str (format "<input type=\"submit\" name=\"move\" value=\"%s\" />" x))
+        (str (aget board x))
+      ))
+  ))
+
+(defn add-game-over-string [game]
+  (if (= true (.isGameOver (.getBoard game))) "<br><a href=\"new_game\">New Game</a>" "")
+
+  )
+
+(defn build-game-string [game]
+  (let [size (.getRowLength (.getBoard game))]
+  (clojure.string/join
+    ["<html><body><form action =\"move\" method= \"post\">"
+     (format "<input type=\"hidden\" name=\"player\" value=\"%s\"/>"
+       (.getSymbol (.getCurrentPlayer game)))
+     (format "<input type=\"hidden\" name=\"board_id\" value=\"%s\" />"
+       (.getID game))
+     (apply str (get-board-array-string game))
+      "</form>"
+     (add-game-over-string game)
+     "</body></html>"
+     ]))
+  )
+
+(defn ttt-factory [] (.evalScriptlet (Ruby/newInstance) "require 'jfactory'; JFactory.new"))
 
 (defn read-in-form-data [request]
   (.getFormBody (new PostParser) request)
@@ -39,16 +68,59 @@
     (.getPlayer factory (.get post-map "player2") "O")))
 
 
-
-
-
 (defn build-success-response [response]
   (.setMethod response "POST")
   (.setStatusCode response "200")
   (.setStatusText response "OK")
   (.setContentType response "text/html")
   (.setHttpType response "HTTP/1.1")
+  (.setHttpType response "HTTP/1.1")
   response
+  )
+
+(defn adjust-player-string [string]
+  (if (= "X" string) "player1" "player2"))
+
+(defn get-game-from-hash [game-map post-map]
+  (.get game-map (.get post-map "board_id"))
+  )
+
+(defn record-player-choice [post-map game]
+  (.recordChoice (.getBoard game)
+    (read-string (.get post-map "move"))
+
+    (.get post-map "player")
+
+    )
+  )
+
+(defn run-game-loop[post-map game]
+  (.runGameLoop game
+    (adjust-player-string (.get post-map "player"))
+    (read-string (.get post-map "move"))
+    )
+)
+
+(defn run-first-game-loop [game]
+  (.runGameLoop game "player1" -1)
+  )
+
+(defn move-handler [map]
+  (reify
+    ResponderInterface
+    (respond [this request]
+      (let [response (new Response)
+            post-map (get-post-variable-hash (read-in-form-data request))
+            game (get-game-from-hash map post-map)
+            ]
+        (run-game-loop post-map game)
+        (set-response-body response (build-game-string game))
+        (build-success-response response)
+        response))
+    ))
+
+(defn add-game-to-hash [game-map game]
+  (.put game-map (Integer/toString (.getID game)) game)
   )
 
 (defn new-game-handler [map]
@@ -58,8 +130,11 @@
       (let [response (new Response)
             post-map (get-post-variable-hash (read-in-form-data request))
             factory (ttt-factory)
+            game (get-new-game post-map factory)
             ]
-        (set-response-body response "hello world")
+        (add-game-to-hash map game)
+        (run-first-game-loop game)
+        (set-response-body response (build-game-string game))
         (build-success-response response)
 
         response))
@@ -75,11 +150,9 @@
        ]
 
     (.addRoute server "get" "/hello" (DefaultInternalResponder. "welcome.html"))
-
     (.addRoute server "get" "/new_game" (DefaultInternalResponder. "introduction.html"))
-    ;(.addRoute server "post" "/new_game" (new NewGameResponder map parser factory string-builder))
     (.addRoute server "post" "/new_game" (new-game-handler map))
-    (.addRoute server "post" "/move" (new MoveResponder map parser string-builder))
+    (.addRoute server "post" "/move" (move-handler map))
     (.go server))
   )
 
