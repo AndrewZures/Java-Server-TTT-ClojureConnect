@@ -17,20 +17,3 @@
     (.addRoute server "post" "/move" (move-handler map))
     (.go server))
   )
-
-
-;BELOW works but uses Java version of new responders
-;(defn -main [& args]
-;  (let [server (new Server 8192 "." (new MyServerSocket) (new Logger))
-;        factory (ttt-factory)
-;        map (new HashMap {String ResponderInterface})
-;        string-builder (new GameStringBuilder)
-;        parser (new PostParser)
-;        ]
-;    (.addRoute server "get" "/hello" (DefaultInternalResponder. "welcome.html"))
-;    (.addRoute server "get" "/new_game" (DefaultInternalResponder. "introduction.html"))
-;    (.addRoute server "post" "/new_game" (new NewGameResponder map parser factory string-builder))
-;    (.addRoute server "post" "/move" (new MoveResponder map parser string-builder))
-;    (.go server))
-;
-;  )
