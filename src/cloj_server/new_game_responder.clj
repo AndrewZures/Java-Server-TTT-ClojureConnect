@@ -76,7 +76,7 @@
        (format "<input type=\"hidden\" name=\"board_id\" value=\"%s\" />"
          (.getID game))
        (apply str (get-board-array-string game))
-       ;       (apply str (add-breaks-to-game-string game (get-board-array-string game)))
+       ;(apply str (add-breaks-to-game-string game (get-board-array-string game)))
        "</form>"
        (add-game-over-string game)
        "</body></html>"

@@ -6,8 +6,7 @@
            [tttmiddleware.gameresponders NewGameResponder MoveResponder]
            [java.util HashMap]
            [java.lang.String])
-  (:require [cloj-server.new-game-responder :refer :all])
-  )
+  (:require [cloj-server.new-game-responder :refer :all]))
 
 
 ;(defn add-breaks-to-game-string [game game-string]

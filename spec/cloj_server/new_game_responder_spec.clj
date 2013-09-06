@@ -125,6 +125,7 @@
       (should= "X" (aget (.getBoardArray (.getBoard game)) 1)))))
 
 (describe "game-string-builder"
+
   (it "has hidden player and board_id fields"
     (let [game (get-test-game)
           post-map (get-valid-move-hash)
@@ -155,4 +156,12 @@
         (build-game-string game))
       (should-contain
         ">X<"
-        (build-game-string game)))))
+        (build-game-string game))))
+
+  (it "has <br /> points after third element for 3x3 board"
+    (let [game (get-test-game)
+          post-map (get-valid-move-hash)]
+      (should-contain
+      "<input type=\"submit\" name=\"move\" value=\"2\" /><br />"
+      (build-game-string game))
+      )))
