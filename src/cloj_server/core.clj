@@ -3,7 +3,7 @@
            [org.andrewzures.javaserver.server_and_sockets MyServerSocket]
            [org.andrewzures.javaserver.responders DefaultInternalResponder ResponderInterface]
            [tttmiddleware.stringbuilders GameStringBuilder]
-           [org.andrewzures.javaserver PostParser]
+           [org.andrewzures.javaserver PostParser ArgumentParser]
            [tttmiddleware.gameresponders NewGameResponder MoveResponder]
            [java.util HashMap]
            [org.andrewzures.javaserver.request Request]
@@ -22,27 +22,41 @@
       (if (= "open" (aget board x))
         (str (format "<input type=\"submit\" name=\"move\" value=\"%s\" />" x))
         (str (aget board x))
-      ))
-  ))
+        ))
+    ))
 
 (defn add-game-over-string [game]
-  (if (= true (.isGameOver (.getBoard game))) "<br><a href=\"new_game\">New Game</a>" "")
+  (if (= true (.isGameOver (.getBoard game)))
+    (clojure.string/join
+    [(format "<br>Winner is %s" (.checkBoardStatus (.getBoard game)))
+      "<br><a href=\"new_game\">New Game</a>" ""])))
 
+
+(defn add-game-to-hash [game-map game]
+  (.put game-map (Integer/toString (.getID game)) game)
   )
+
+;(defn add-breaks-to-game-string [game game-string]
+;  (let [row-length (.getRowLength (.getBoard game))
+;        new-list (partition row-length game-string)]
+;;    (apply #(conj % "<br />") new-list)
+;    (#(conj % "<br />") new-list)
+;    ))
 
 (defn build-game-string [game]
   (let [size (.getRowLength (.getBoard game))]
-  (clojure.string/join
-    ["<html><body><form action =\"move\" method= \"post\">"
-     (format "<input type=\"hidden\" name=\"player\" value=\"%s\"/>"
-       (.getSymbol (.getCurrentPlayer game)))
-     (format "<input type=\"hidden\" name=\"board_id\" value=\"%s\" />"
-       (.getID game))
-     (apply str (get-board-array-string game))
-      "</form>"
-     (add-game-over-string game)
-     "</body></html>"
-     ]))
+    (clojure.string/join
+      ["<html><body><form action =\"move\" method= \"post\">"
+       (format "<input type=\"hidden\" name=\"player\" value=\"%s\"/>"
+         (.getSymbol (.getCurrentPlayer game)))
+       (format "<input type=\"hidden\" name=\"board_id\" value=\"%s\" />"
+         (.getID game))
+       (apply str (get-board-array-string game))
+;       (apply str (add-breaks-to-game-string game (get-board-array-string game)))
+       "</form>"
+       (add-game-over-string game)
+       "</body></html>"
+       ]))
   )
 
 (defn ttt-factory [] (.evalScriptlet (Ruby/newInstance) "require 'jfactory'; JFactory.new"))
@@ -94,12 +108,12 @@
     )
   )
 
-(defn run-game-loop[post-map game]
+(defn run-game-loop [post-map game]
   (.runGameLoop game
     (adjust-player-string (.get post-map "player"))
     (read-string (.get post-map "move"))
     )
-)
+  )
 
 (defn run-first-game-loop [game]
   (.runGameLoop game "player1" -1)
@@ -118,10 +132,6 @@
         (build-success-response response)
         response))
     ))
-
-(defn add-game-to-hash [game-map game]
-  (.put game-map (Integer/toString (.getID game)) game)
-  )
 
 (defn new-game-handler [map]
   (reify
@@ -142,12 +152,13 @@
 
 
 (defn -main [& args]
-  (let [server (new Server 8192 "." (new MyServerSocket) (new Logger))
+  (let [parser (new ArgumentParser (into-array String args))
+        server (new Server (.getPort parser) (.getPath parser) (new MyServerSocket) (new Logger))
         factory (ttt-factory)
         map (new HashMap {String ResponderInterface})
         string-builder (new GameStringBuilder)
         parser (new PostParser)
-       ]
+        ]
 
     (.addRoute server "get" "/hello" (DefaultInternalResponder. "welcome.html"))
     (.addRoute server "get" "/new_game" (DefaultInternalResponder. "introduction.html"))
