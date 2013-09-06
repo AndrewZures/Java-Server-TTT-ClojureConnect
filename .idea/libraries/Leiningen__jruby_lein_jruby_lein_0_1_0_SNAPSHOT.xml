@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: jruby-lein:jruby-lein:0.1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/jruby-lein/jruby-lein/0.1.0-SNAPSHOT/jruby-lein-0.1.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
