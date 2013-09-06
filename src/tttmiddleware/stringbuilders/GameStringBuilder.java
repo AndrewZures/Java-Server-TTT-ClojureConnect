@@ -6,7 +6,6 @@ import tttmiddleware.interfaces.Game;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
-import java.util.HashMap;
 
 public class GameStringBuilder {
 

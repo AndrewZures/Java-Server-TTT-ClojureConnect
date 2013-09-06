@@ -1,11 +1,9 @@
 package tttmiddleware.gameresponders;
 
 import org.andrewzures.javaserver.PostParser;
-
 import org.andrewzures.javaserver.request.Request;
 import org.andrewzures.javaserver.responders.ResponderInterface;
 import org.andrewzures.javaserver.response.Response;
-
 import tttmiddleware.interfaces.Game;
 import tttmiddleware.stringbuilders.GameStringBuilder;
 

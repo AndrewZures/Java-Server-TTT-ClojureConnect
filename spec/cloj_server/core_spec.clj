@@ -12,7 +12,8 @@
   (:import [org.andrewzures.javaserver.server_and_sockets Server])
 
   (:require [speclj.core :refer :all ]
-            [cloj-server.core :refer :all ]))
+            [cloj-server.core :refer :all ]
+            [cloj-server.new-game-responder :refer :all]))
 
 ;helper methods
 

@@ -6,7 +6,6 @@ import org.andrewzures.javaserver.responders.DefaultInternalResponder;
 import org.andrewzures.javaserver.server_and_sockets.MyServerSocket;
 import org.andrewzures.javaserver.server_and_sockets.Server;
 import org.andrewzures.javaserver.server_and_sockets.ServerSocketInterface;
-
 import org.jruby.Ruby;
 import tttmiddleware.gameresponders.MoveResponder;
 import tttmiddleware.gameresponders.NewGameResponder;
