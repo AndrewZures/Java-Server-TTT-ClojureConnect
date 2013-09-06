@@ -1,14 +1,12 @@
 (ns cloj-server.core
-  (:import [org.andrewzures.javaserver.server_and_sockets MyServerSocket]
+  (:import [org.andrewzures.javaserver.server_and_sockets Server MyServerSocket]
            [org.andrewzures.javaserver.responders DefaultInternalResponder ResponderInterface]
+           [org.andrewzures.javaserver Logger PostParser ArgumentParser]
            [tttmiddleware.stringbuilders GameStringBuilder]
-           [org.andrewzures.javaserver PostParser ArgumentParser]
            [tttmiddleware.gameresponders NewGameResponder MoveResponder]
            [java.util HashMap]
-           [org.andrewzures.javaserver Logger]
-           [org.andrewzures.javaserver.server_and_sockets Server]
            [java.lang.String])
-  (:require [cloj-server.new-game-responder :refer :all ])
+  (:require [cloj-server.new-game-responder :refer :all])
   )
 
 
@@ -19,15 +17,10 @@
 ;    (#(conj % "<br />") new-list)
 ;    ))
 
-
-
 (defn -main [& args]
   (let [parser (new ArgumentParser (into-array String args))
         server (new Server (.getPort parser) (.getPath parser) (new MyServerSocket) (new Logger))
-        factory (ttt-factory)
         map (new HashMap {String ResponderInterface})
-        string-builder (new GameStringBuilder)
-        parser (new PostParser)
         ]
 
     (.addRoute server "get" "/hello" (DefaultInternalResponder. "welcome.html"))
@@ -36,7 +29,6 @@
     (.addRoute server "post" "/move" (move-handler map))
     (.go server))
   )
-
 
 
 ;BELOW works but uses Java version of new responders
@@ -54,7 +46,3 @@
 ;    (.go server))
 ;
 ;  )
-
-
-
-

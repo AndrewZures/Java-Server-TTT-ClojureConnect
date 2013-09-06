@@ -3,8 +3,7 @@
            [org.andrewzures.javaserver.responders ResponderInterface]
            [org.andrewzures.javaserver.response Response]
            [org.jruby Ruby]
-           [java.io ByteArrayInputStream])
-  )
+           [java.io ByteArrayInputStream]))
 
 (defn ttt-factory [] (.evalScriptlet (Ruby/newInstance) "require 'jfactory'; JFactory.new"))
 
@@ -36,9 +35,7 @@
     (for [x (range 0 (alength board))]
       (if (= "open" (aget board x))
         (str (format "<input type=\"submit\" name=\"move\" value=\"%s\" />" x))
-        (str (aget board x))
-        ))
-    ))
+        (str (aget board x))))))
 
 (defn build-success-response [response]
   (.setMethod response "POST")
@@ -99,8 +96,7 @@
         (set-response-body response (build-game-string game))
         (build-success-response response)
 
-        response))
-    ))
+        response))))
 
 (defn move-handler [map]
   (reify
@@ -113,10 +109,4 @@
         (run-game-loop post-map game)
         (set-response-body response (build-game-string game))
         (build-success-response response)
-        response))
-    ))
-
-
-
-
-
+        response))))
