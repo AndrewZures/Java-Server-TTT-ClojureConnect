@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/cloj_server.iml" filepath="$PROJECT_DIR$/cloj_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ruby_java_clojure_server.iml" filepath="$PROJECT_DIR$/ruby_java_clojure_server.iml" />
     </modules>
   </component>
 </project>
