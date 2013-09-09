@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Leiningen: jruby-lein:jruby-lein:0.1.0-SNAPSHOT">
+  <library name="Leiningen: jruby-lein:jruby-lein:0.1.0-20130906.211644-1">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/jruby-lein/jruby-lein/0.1.0-SNAPSHOT/jruby-lein-0.1.0-SNAPSHOT.jar!/" />
     </CLASSES>

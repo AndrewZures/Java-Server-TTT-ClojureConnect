@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Leiningen: java-server:java-server:0.1.5-SNAPSHOT">
-    <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/java-server/java-server/0.1.5-SNAPSHOT/java-server-0.1.5-SNAPSHOT.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

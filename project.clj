@@ -6,7 +6,7 @@
   :profiles {:dev {:dependencies [[speclj "2.7.0"]]}}
   :plugins [[speclj "2.7.0"]]
   :dependencies [[org.clojure/clojure "1.5.1"]
-                 [java-server "0.1.5-SNAPSHOT"]
+                 [java-server "0.1.6-SNAPSHOT"]
                  [ruby_ttt "0.1.3-SNAPSHOT"]
                  [jruby-lein "0.1.0-SNAPSHOT"]]
   :main cloj-server.core
