@@ -1,5 +1,5 @@
 java_import 'tttmiddleware.interfaces.TTTFactory'
-require "ruby_ttt/factory"
+require 'ruby_ttt/factory'
 
 class JFactory < Factory
   include TTTFactory
@@ -11,4 +11,9 @@ class JFactory < Factory
   def getPlayer(type, mark)
     get_player(type, mark)
   end
+
+  def getGame(id, board, player1, player2)
+    get_game(id, board, player1, player2)
+  end
+
 end

@@ -2,9 +2,8 @@
   (:import [org.andrewzures.javaserver.responders DefaultInternalResponder ResponderInterface]
            [org.andrewzures.javaserver.server_and_sockets MyServerSocket]
            [org.andrewzures.javaserver Logger InputReader PostParser]
-           [org.andrewzures.javaserver.test.socket_test MockSocket])
-  (:import [org.andrewzures.javaserver.server_and_sockets Server])
-
+           [org.andrewzures.javaserver.test.socket_test MockSocket]
+           [org.andrewzures.javaserver.server_and_sockets Server])
   (:require [speclj.core :refer :all ]
             [cloj-server.core :refer :all ]
             [cloj-server.new-game-responder :refer :all ]))

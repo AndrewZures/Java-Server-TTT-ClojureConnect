@@ -1,7 +1,5 @@
 (ns cloj-server.new-game-responder-spec
-  (:import [org.andrewzures.javaserver.test.socket_test MockSocket]
-           [org.andrewzures.javaserver Logger InputReader PostParser]
-           [java.util HashMap]
+  (:import [java.util HashMap]
            [tttmiddleware.interfaces Game])
   (:require [speclj.core :refer :all ]
             [cloj-server.new-game-responder :refer :all ]
