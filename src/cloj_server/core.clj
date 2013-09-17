@@ -4,7 +4,9 @@
            [org.andrewzures.javaserver Logger PostParser ArgumentParser]
            [java.util HashMap]
            [java.lang.String])
-  (:require [cloj-server.new-game-responder :refer :all]))
+  (:require [cloj-server.new-game-responder :refer :all]
+            [cloj-server.move-responder :refer :all]
+            [cloj-server.game-string-builder :refer :all]))
 
 (defn -main [& args]
   (let [parser (new ArgumentParser (into-array String args))

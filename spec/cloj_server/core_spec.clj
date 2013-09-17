@@ -2,12 +2,7 @@
   (:import [org.andrewzures.javaserver.responders DefaultInternalResponder ResponderInterface]
            [org.andrewzures.javaserver.server_and_sockets MyServerSocket]
            [org.andrewzures.javaserver Logger InputReader PostParser]
-           [org.andrewzures.javaserver.request Request]
-           [org.andrewzures.javaserver.test.socket_test MockSocket]
-           [java.util HashMap]
-           [java.lang.String]
-           [tttmiddleware.interfaces Game]
-           [org.andrewzures.javaserver.response Response])
+           [org.andrewzures.javaserver.test.socket_test MockSocket])
   (:import [org.andrewzures.javaserver.server_and_sockets Server])
 
   (:require [speclj.core :refer :all ]
