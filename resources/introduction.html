@@ -2,27 +2,26 @@
 <html>
 <body>
 <form action="/new_game" method="post">
-    Type:<br>
+    <b>Game Type:</b><br>
     <input type="radio" name="game_type" value="three_by_three">3x3<br>
     <input type="radio" name="game_type" value="four_by_four">4x4<br>
     <input type="radio" name="game_type" value="five_by_five">5x5<br>
     <input type="radio" name="game_type" value="cube_three">3x3x3<br>
     <br>
 
-    Players:<br><br>
-    player1:<br>
+    <b>Player X:</b><br>
     <input type="radio" name="player1" value="human">Human<br>
     <input type="radio" name="player1" value="easy_ai">Easy AI<br>
     <input type="radio" name="player1" value="medium_ai">Medium AI<br>
     <input type="radio" name="player1" value="unbeatable_ai">Unbeatable AI<br>
 
-    player2:<br><br>
+    <br><b>Player O:</b><br>
     <input type="radio" name="player2" value="human">Human<br>
     <input type="radio" name="player2" value="easy_ai">Easy AI<br>
     <input type="radio" name="player2" value="medium_ai">Medium AI<br>
     <input type="radio" name="player2" value="unbeatable_ai">Unbeatable AI<br>
 
-    <input type="submit" name="submit"/>
+    <br><input type="submit" name="submit" value="Start Game"/>
 </form>
 </body>
 </html>

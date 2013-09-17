@@ -9,18 +9,25 @@
   (let [board (.getBoardArray (.getBoard game))]
     (for [x (range 0 (alength board))]
       (if (= "open" (aget board x))
-        (str (format "<input type=\"submit\" name=\"move\" value=\"%s\" />" x))
-        (str (aget board x))))))
+        (str (format "<input type=\"image\" src=\"blank_icon.png\" name=\"move\" value=\"%s\" />" x))
+        (if (= "X" (aget board x))
+          (str (format "<input type=\"image\" src=\"x_icon.png\" name=\"move\" value=\"%s\" />" x))
+          (str (format "<input type=\"image\" src=\"o_icon.png\" name=\"move\" value=\"%s\" />" x)))
+        ))))
 
 (defn add-game-over-string [game]
   (if (= true (.isGameOver (.getBoard game)))
     (clojure.string/join
-      [(format "<br>Winner is %s" (.checkBoardStatus (.getBoard game)))
-       "<br><a href=\"new_game\">New Game</a>" ""])))
+      [(if (= "tie" (.checkBoardStatus (.getBoard game)))
+        "Game has ended in a Tie"
+        (format "<br>Winner is %s" (.checkBoardStatus (.getBoard game))))
+       "<br><a href=\"new_game\">New Game</a>" ""])
+    "<br><a href=\"new_game\">Back To Game Menu</a>"
+    ))
 
-(defn add-breaks-to-game-string [game game-string]
-  (let [row-length (.getRowLength (.getBoard game))
-        new-list (partition row-length game-string)]
+
+(defn add-breaks [game-string row-length]
+  (let [new-list (partition row-length game-string)]
     (apply concat (map #(concat % '("<br />")) new-list))))
 
 (defn build-game-string [game]
@@ -31,7 +38,7 @@
          (.getSymbol (.getCurrentPlayer game)))
        (format "<input type=\"hidden\" name=\"board_id\" value=\"%s\" />"
          (.getID game))
-       (apply str (add-breaks-to-game-string game (get-board-array-string game)))
+       (apply str (add-breaks (get-board-array-string game) size))
        "</form>"
        (add-game-over-string game)
        "</body></html>"

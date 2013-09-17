@@ -8,8 +8,9 @@ class JFactory < Factory
     get_board(type)
   end
 
-  def getPlayer(type, mark)
-    get_player(type, mark)
+  def getPlayer(player_type, symbol)
+    name = nil
+    get_player(player_type, symbol)
   end
 
   def getGame(id, board, player1, player2)

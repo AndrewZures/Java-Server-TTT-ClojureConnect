@@ -15,6 +15,9 @@
 
     (.addRoute server "get" "/hello" (DefaultInternalResponder. "welcome.html"))
     (.addRoute server "get" "/new_game" (DefaultInternalResponder. "introduction.html"))
+    (.addRoute server "get" "/x_icon.png" (DefaultInternalResponder. "x_icon.png"))
+    (.addRoute server "get" "/o_icon.png" (DefaultInternalResponder. "o_icon.png"))
+    (.addRoute server "get" "/blank_icon.png" (DefaultInternalResponder. "blank_icon.png"))
     (.addRoute server "post" "/new_game" (new-game-handler map))
     (.addRoute server "post" "/move" (move-handler map))
     (.go server))
