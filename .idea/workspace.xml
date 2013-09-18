@@ -2,24 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/blank_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/mj.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/o_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/x_icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cloj_server/core.clj" afterPath="$PROJECT_DIR$/src/cloj_server/core.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cloj_server/game_string_builder.clj" afterPath="$PROJECT_DIR$/src/cloj_server/game_string_builder.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/cloj_server/game_string_builder_spec.clj" afterPath="$PROJECT_DIR$/spec/cloj_server/game_string_builder_spec.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/introduction.html" afterPath="$PROJECT_DIR$/resources/introduction.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojars_andrewzures_ruby_ttt_0_1_0_20130909_183541_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojars_andrewzures_ruby_ttt_0_1_3_20130917_202330_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tttmiddleware/interfaces/TTTFactory.java" afterPath="$PROJECT_DIR$/src/tttmiddleware/interfaces/TTTFactory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/jfactory.rb" afterPath="$PROJECT_DIR$/resources/jfactory.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cloj_server/new_game_responder.clj" afterPath="$PROJECT_DIR$/src/cloj_server/new_game_responder.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.clj" afterPath="$PROJECT_DIR$/project.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ruby_java_clojure_server.iml" afterPath="$PROJECT_DIR$/ruby_java_clojure_server.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cloj_server/test_utility_methods.clj" afterPath="$PROJECT_DIR$/src/cloj_server/test_utility_methods.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="project.clj.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379451913421" ignored="false" />
+    <file path="/Dummy.txt" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379462230984" ignored="false" />
     <file path="/core.clj" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379453862397" ignored="false" />
     <file path="$PROJECT_DIR$/../../java_server/final_java_server/Clean_Java_Server/src/org/andrewzures/java_server/request/RequestBuilder.java" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1378346666883" ignored="false" />
-    <file path="/Clojure REPL" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1378418534596" ignored="false" />
+    <file path="/Clojure REPL" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379462902144" ignored="false" />
     <file path="/project.clj" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1378751772407" ignored="false" />
     <file path="$PROJECT_DIR$/../../java_server/clean_server_with_game_additions/java_server_for_ttt/test/org/andrewzures/javaserver/test/LoggerTest.java" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1378346718451" ignored="false" />
     <file path="$PROJECT_DIR$/../../java_server/clean_server_with_game_additions/java_server_for_ttt/test/org/andrewzures/javaserver/test/TestThread.java" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1378346713795" ignored="false" />
@@ -129,7 +126,7 @@
     <file path="$PROJECT_DIR$/../../java_server/final_java_server/Clean_Java_Server/project.clj" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1378416187537" ignored="false" />
     <file path="$PROJECT_DIR$/../../java_server/final_java_server/Clean_Java_Server/pom.xml" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1378743589044" ignored="false" />
     <file path="/Java_Game.java" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1378353053155" ignored="false" />
-    <file path="/jfactory.rb" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379451649581" ignored="false" />
+    <file path="/jfactory.rb" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379462646599" ignored="false" />
     <file path="$PROJECT_DIR$/../../java_server/test_server_stuff/src/org/andrewzures/tttmiddleware/stringbuilders/GameStringBuilder.java" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1378397580685" ignored="false" />
     <file path="/core_spec.clj" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1378490985830" ignored="false" />
     <file path="/Server.java" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1378409224618" ignored="false" />
@@ -144,9 +141,9 @@
     <file path="/new-game-responder.clj" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1378500500363" ignored="false" />
     <file path="/Board.java" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1378479475307" ignored="false" />
     <file path="/new-game-responder_spec.clj" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1378500909417" ignored="false" />
-    <file path="/new_game_responder.clj" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379457278725" ignored="false" />
+    <file path="/new_game_responder.clj" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379462329179" ignored="false" />
     <file path="/Game.java" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1378500066475" ignored="false" />
-    <file path="/TTTFactory.java" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379451069468" ignored="false" />
+    <file path="/TTTFactory.java" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379463201092" ignored="false" />
     <file path="$PROJECT_DIR$/../../java_server/Build.xml" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1378914009613" ignored="false" />
     <file path="/Build.xml" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1378913996438" ignored="false" />
     <file path="$PROJECT_DIR$/../../../tic_tac_toe/tic_tac_toe/lib/ruby_ttt/game_controller.rb" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379360726405" ignored="false" />
@@ -236,7 +233,7 @@
     <file path="$PROJECT_DIR$/../../../tic_tac_toe/tic_tac_toe/pom.xml" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379449430877" ignored="false" />
     <file path="/two_dimensional_board.rb" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379448273522" ignored="false" />
     <file path="$PROJECT_DIR$/../../../tic_tac_toe/tic_tac_toe/src/ruby_ttt/core/boards/board.rb" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379448408553" ignored="false" />
-    <file path="/test_utility_methods.clj" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379458161584" ignored="false" />
+    <file path="/test_utility_methods.clj" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379462775507" ignored="false" />
     <file path="$PROJECT_DIR$/../../../tic_tac_toe/tic_tac_toe/src/ruby_ttt/core/factory.rb" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379449320744" ignored="false" />
     <file path="/game_string_builder.clj" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379456834603" ignored="false" />
     <file path="/introduction.html" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379454883499" ignored="false" />
@@ -256,7 +253,7 @@
   <component name="DebuggerManager">
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/cloj_server/core.clj" line="23" class="Class at core.clj:20" package="">
+      <breakpoint url="file://$PROJECT_DIR$/src/cloj_server/core.clj" line="23" class="Class at core.clj:23" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -322,7 +319,7 @@
           <file leaf-file-name="jfactory.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/resources/jfactory.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="12" column="34" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
+                <state line="15" column="50" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -331,7 +328,7 @@
           <file leaf-file-name="new_game_responder.clj" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/cloj_server/new_game_responder.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="32" column="13" selection-start="1132" selection-end="1132" vertical-scroll-proportion="0.0">
+                <state line="22" column="66" selection-start="859" selection-end="859" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -346,10 +343,28 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="test_utility_methods.clj" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="TTTFactory.java" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/tttmiddleware/interfaces/TTTFactory.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="4" column="75" selection-start="173" selection-end="173" vertical-scroll-proportion="0.08928572">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="test_utility_methods.clj" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/cloj_server/test_utility_methods.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="44" column="61" selection-start="1698" selection-end="1698" vertical-scroll-proportion="0.45762712">
+                <state line="5" column="22" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Player.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/tttmiddleware/interfaces/Player.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="2" column="17" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -389,7 +404,7 @@
           <file leaf-file-name="game_string_builder_spec.clj" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/spec/cloj_server/game_string_builder_spec.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="28" column="27" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.45484582">
+                <state line="28" column="27" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.59322035">
                   <folding />
                 </state>
               </provider>
@@ -422,20 +437,20 @@
         <option value="$PROJECT_DIR$/spec/cloj_server/move_responder_spec.clj" />
         <option value="$PROJECT_DIR$/spec/cloj_server/new_game_responder_spec.clj" />
         <option value="$PROJECT_DIR$/src/tttmiddleware/ruby_interfaces/Board.java" />
-        <option value="$PROJECT_DIR$/resources/jfactory.rb" />
-        <option value="$PROJECT_DIR$/src/tttmiddleware/interfaces/TTTFactory.java" />
         <option value="$PROJECT_DIR$/src/cloj_server/core.clj" />
         <option value="$PROJECT_DIR$/resources/introduction.html" />
         <option value="$PROJECT_DIR$/src/cloj_server/game_string_builder.clj" />
         <option value="$PROJECT_DIR$/src/cloj_server/game_responder.clj" />
-        <option value="$PROJECT_DIR$/src/cloj_server/new_game_responder.clj" />
         <option value="$PROJECT_DIR$/spec/cloj_server/game_string_builder_spec.clj" />
+        <option value="$PROJECT_DIR$/src/cloj_server/new_game_responder.clj" />
+        <option value="$PROJECT_DIR$/resources/jfactory.rb" />
         <option value="$PROJECT_DIR$/src/cloj_server/test_utility_methods.clj" />
+        <option value="$PROJECT_DIR$/src/tttmiddleware/interfaces/TTTFactory.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-6" />
+    <option name="x" value="7" />
     <option name="y" value="22" />
     <option name="width" value="1920" />
     <option name="height" value="1054" />
@@ -468,8 +483,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -480,46 +495,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="External Libraries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project.clj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Leiningen: org.clojars.andrewzures:ruby_ttt:0.1.0-20130909.183541-1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ruby_ttt-0.1.0-SNAPSHOT.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project.clj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Leiningen: org.clojars.andrewzures:ruby_ttt:0.1.0-20130909.183541-1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ruby_ttt-0.1.0-SNAPSHOT.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ruby_ttt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -597,6 +572,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project.clj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cloj_server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -966,7 +955,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="22" width="1920" height="1054" extended-state="0" />
+    <frame x="7" y="22" width="1920" height="1054" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -989,8 +978,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14369658" sideWeight="0.67094016" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21406728" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14369658" sideWeight="0.7863248" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21367522" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1064,20 +1053,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/clojars/andrewzures/ruby_ttt/0.1.3-SNAPSHOT/ruby_ttt-0.1.3-SNAPSHOT.jar!/ruby_ttt/core/game.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/clojars/andrewzures/ruby_ttt/0.1.3-SNAPSHOT/ruby_ttt-0.1.3-SNAPSHOT.jar!/ruby_ttt/core/factory.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="15" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/clojars/andrewzures/ruby_ttt/0.1.1-SNAPSHOT/ruby_ttt-0.1.1-SNAPSHOT.jar!/ruby_ttt/core/factory.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1113,13 +1088,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tttmiddleware/interfaces/TTTFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="27" selection-start="422" selection-end="422" vertical-scroll-proportion="0.15083799">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tttmiddleware/interfaces/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="17" selection-start="52" selection-end="52" vertical-scroll-proportion="0.033039648">
@@ -1130,27 +1098,6 @@
     <entry file="jar://$MAVEN_REPOSITORY$/org/clojars/andrewzures/ruby_ttt/0.1.0-SNAPSHOT/ruby_ttt-0.1.0-SNAPSHOT.jar!/ruby_ttt/game.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/jfactory.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="34" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cloj_server/game_responder.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="74" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cloj_server/new_game_responder.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="13" selection-start="1132" selection-end="1132" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1169,9 +1116,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/doc/intro.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/jfactory.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="50" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cloj_server/new_game_responder.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="66" selection-start="859" selection-end="859" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cloj_server/game_responder.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="74" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cloj_server/test_utility_methods.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="61" selection-start="1698" selection-end="1698" vertical-scroll-proportion="0.45762712">
+        <state line="5" column="22" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tttmiddleware/interfaces/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="17" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tttmiddleware/interfaces/TTTFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="75" selection-start="173" selection-end="173" vertical-scroll-proportion="0.08928572">
           <folding />
         </state>
       </provider>

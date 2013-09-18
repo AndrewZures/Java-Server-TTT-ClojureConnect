@@ -14,10 +14,10 @@
   (.getGame factory
     (str (gensym))
     (.getBoard factory (.get post-map "game_type"))
-    (.getPlayer factory (.get post-map "player1") "X")
-    (.getPlayer factory (.get post-map "player2") "O")))
-;    (.getPlayer factory "human" "X" "O" "player1")
-;    (.getPlayer factory "human" "O" "X" "player2")
+;    (.getPlayer factory (.get post-map "player1") "X")
+;    (.getPlayer factory (.get post-map "player2") "O")))
+    (.getPlayer factory "human" "X" "O" "player1")
+    (.getPlayer factory "human" "O" "X" "player2")))
 
 (defn get-test-post-request []
   (let [request (new Request)
@@ -42,7 +42,7 @@
     (.setInputStream socket "player1=human&player2=human&game_type=four_by_four")
     (.setInputReader request reader)
     request))
-                                                     lein run
+
 (defn get-test-move-request []
   (let [request (new Request)
         socket (new MockSocket)

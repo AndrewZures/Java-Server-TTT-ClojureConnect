@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Leiningen: org.clojars.andrewzures:ruby_ttt:0.1.0-20130909.183541-1">
-    <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/clojars/andrewzures/ruby_ttt/0.1.0-SNAPSHOT/ruby_ttt-0.1.0-SNAPSHOT.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

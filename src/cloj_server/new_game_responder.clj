@@ -19,8 +19,8 @@
   (.getGame factory
     (str (gensym))
     (.getBoard factory (.get post-map "game_type"))
-    (.getPlayer factory (.get post-map "player1") "X")
-    (.getPlayer factory (.get post-map "player2") "O")))
+    (.getPlayer factory (.get post-map "player1") "X" "O" "player1")
+    (.getPlayer factory (.get post-map "player2") "O" "X" "player2")))
 
 (defn new-game-handler [map]
   (reify
