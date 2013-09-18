@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojars_andrewzures_java_server_0_1_1_20130918_013451_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojars_andrewzures_java_server_0_2_1_20130918_052700_1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojars_andrewzures_java_server_0_2_1_20130918_052700_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojars_andrewzures_java_server_0_2_2_20130918_054420_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cloj_server/core.clj" afterPath="$PROJECT_DIR$/src/cloj_server/core.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/cloj_server/core_spec.clj" afterPath="$PROJECT_DIR$/spec/cloj_server/core_spec.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/cloj_server/game_responder_spec.clj" afterPath="$PROJECT_DIR$/spec/cloj_server/game_responder_spec.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.clj" afterPath="$PROJECT_DIR$/project.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ruby_java_clojure_server.iml" afterPath="$PROJECT_DIR$/ruby_java_clojure_server.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cloj_server/test_utility_methods.clj" afterPath="$PROJECT_DIR$/src/cloj_server/test_utility_methods.clj" />
@@ -13,7 +11,7 @@
     </list>
     <ignored path="project.clj.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379482078024" ignored="false" />
+    <file path="/Dummy.txt" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379483089975" ignored="false" />
     <file path="/core.clj" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379482149407" ignored="false" />
     <file path="$PROJECT_DIR$/../../java_server/final_java_server/Clean_Java_Server/src/org/andrewzures/java_server/request/RequestBuilder.java" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1378346666883" ignored="false" />
     <file path="/Clojure REPL" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379462902144" ignored="false" />
@@ -233,15 +231,20 @@
     <file path="$PROJECT_DIR$/../../../tic_tac_toe/tic_tac_toe/pom.xml" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379449430877" ignored="false" />
     <file path="/two_dimensional_board.rb" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379448273522" ignored="false" />
     <file path="$PROJECT_DIR$/../../../tic_tac_toe/tic_tac_toe/src/ruby_ttt/core/boards/board.rb" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379448408553" ignored="false" />
-    <file path="/test_utility_methods.clj" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379482440911" ignored="false" />
+    <file path="/test_utility_methods.clj" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379483579611" ignored="false" />
     <file path="$PROJECT_DIR$/../../../tic_tac_toe/tic_tac_toe/src/ruby_ttt/core/factory.rb" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379449320744" ignored="false" />
     <file path="/game_string_builder.clj" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379456834603" ignored="false" />
     <file path="/introduction.html" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379454883499" ignored="false" />
     <file path="/a.dummy" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379482542685" ignored="false" />
     <file path="$PROJECT_DIR$/../../java_server/src/org/andrewzures/javaserver/Main.java" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379468579452" ignored="false" />
-    <file path="$PROJECT_DIR$/../../java_server/pom.xml" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379469388291" ignored="false" />
+    <file path="$PROJECT_DIR$/../../java_server/pom.xml" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379483081214" ignored="false" />
     <file path="$PROJECT_DIR$/../../java_server/src/org/andrewzures/javaserver/responders/file404Responder.java" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379468494219" ignored="false" />
     <file path="/file404Responder.java" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379468494219" ignored="false" />
+    <file path="$PROJECT_DIR$/../../java_server/src/org/andrewzures/javaserver/responders/FormResponder.java" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379482843793" ignored="false" />
+    <file path="$PROJECT_DIR$/../../java_server/src/org/andrewzures/javaserver/PostParser.java" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379482850398" ignored="false" />
+    <file path="$PROJECT_DIR$/../../java_server/project.clj" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379482899899" ignored="false" />
+    <file path="$PROJECT_DIR$/../../java_server/test/org/andrewzures/javaserver/test/PostParserTest.java" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379482978946" ignored="false" />
+    <file path="/PostParserTest.java" changelist="5eeb81f8-4fb5-4aed-bcbc-0c75b502ed86" time="1379482976623" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,7 +261,7 @@
   <component name="DebuggerManager">
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/cloj_server/core.clj" line="26" class="Class at core.clj:23" package="">
+      <breakpoint url="file://$PROJECT_DIR$/src/cloj_server/core.clj" line="26" class="Class at core.clj:26" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -324,7 +327,7 @@
           <file leaf-file-name="new_game_responder_spec.clj" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/spec/cloj_server/new_game_responder_spec.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="25" column="44" selection-start="979" selection-end="980" vertical-scroll-proportion="-15.0">
+                <state line="25" column="44" selection-start="979" selection-end="980" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -333,7 +336,7 @@
           <file leaf-file-name="new_game_responder.clj" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/cloj_server/new_game_responder.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="4" column="34" selection-start="220" selection-end="225" vertical-scroll-proportion="-2.4">
+                <state line="4" column="34" selection-start="220" selection-end="225" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -342,7 +345,7 @@
           <file leaf-file-name="game_responder.clj" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/cloj_server/game_responder.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="19" column="12" selection-start="603" selection-end="608" vertical-scroll-proportion="-11.4">
+                <state line="19" column="12" selection-start="603" selection-end="608" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -351,7 +354,7 @@
           <file leaf-file-name="test_utility_methods.clj" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/cloj_server/test_utility_methods.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="51" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0">
+                <state line="42" column="52" selection-start="1584" selection-end="1584" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -366,19 +369,28 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="core_spec.clj" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="core_spec.clj" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/spec/cloj_server/core_spec.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="24" column="70" selection-start="1328" selection-end="1328" vertical-scroll-proportion="0.41284403">
+                <state line="24" column="70" selection-start="1328" selection-end="1328" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="core.clj" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="Server.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="jar://$MAVEN_REPOSITORY$/org/clojars/andrewzures/java-server/0.2.1-SNAPSHOT/java-server-0.2.1-SNAPSHOT.jar!/org/andrewzures/javaserver/server_and_sockets/Server.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="13" column="13" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="core.clj" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/cloj_server/core.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="3" column="24" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
+                <state line="22" column="63" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.3886926">
                   <folding />
                 </state>
               </provider>
@@ -388,10 +400,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="game_string_builder_spec.clj" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="game_string_builder_spec.clj" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/spec/cloj_server/game_string_builder_spec.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="11" column="40" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0">
+                <state line="11" column="40" selection-start="408" selection-end="408" vertical-scroll-proportion="0.18435754">
                   <folding />
                 </state>
               </provider>
@@ -406,10 +418,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="file404Responder.java" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="file404Responder.java" pinned="false" current="false" current-in-tab="false">
             <entry file="jar://$MAVEN_REPOSITORY$/org/clojars/andrewzures/java-server/0.1.1-SNAPSHOT/java-server-0.1.1-SNAPSHOT.jar!/org/andrewzures/javaserver/responders/file404Responder.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="20" column="50" selection-start="695" selection-end="695" vertical-scroll-proportion="0.31843576">
+                <state line="20" column="50" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -447,16 +459,15 @@
         <option value="$PROJECT_DIR$/resources/jfactory.rb" />
         <option value="$PROJECT_DIR$/src/tttmiddleware/interfaces/TTTFactory.java" />
         <option value="$PROJECT_DIR$/spec/cloj_server/game_string_builder_spec.clj" />
-        <option value="$PROJECT_DIR$/src/cloj_server/core.clj" />
         <option value="$PROJECT_DIR$/spec/cloj_server/game_responder_spec.clj" />
-        <option value="$PROJECT_DIR$/src/cloj_server/test_utility_methods.clj" />
         <option value="$PROJECT_DIR$/spec/cloj_server/core_spec.clj" />
+        <option value="$PROJECT_DIR$/src/cloj_server/test_utility_methods.clj" />
+        <option value="$PROJECT_DIR$/src/cloj_server/core.clj" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1924" />
-    <option name="y" value="18" />
+    <option name="x" value="-1930" />
     <option name="width" value="1920" />
     <option name="height" value="1054" />
   </component>
@@ -489,6 +500,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -609,7 +621,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -627,12 +638,12 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -713,35 +724,13 @@
       <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
-    <configuration default="true" type="JRubyCucumberRunConfigurationType" factoryName="JRuby Cucumber">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" value="-Dforce.jruby.jit=true -Djruby.debug.fullTrace=true" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
+    <configuration default="true" type="ClojureScriptRunConfiguration" factoryName="Clojure Script">
       <module name="" />
-      <envs>
-        <env name="ANSICON" value="" />
-      </envs>
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*.feature" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="VERBOSE_OPTION" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="" />
+      <setting name="repl" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
@@ -774,13 +763,35 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method />
     </configuration>
-    <configuration default="true" type="ClojureScriptRunConfiguration" factoryName="Clojure Script">
+    <configuration default="true" type="JRubyCucumberRunConfigurationType" factoryName="JRuby Cucumber">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-Dforce.jruby.jit=true -Djruby.debug.fullTrace=true" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="" />
-      <setting name="repl" value="false" />
+      <envs>
+        <env name="ANSICON" value="" />
+      </envs>
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*.feature" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="VERBOSE_OPTION" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -837,6 +848,19 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -863,19 +887,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -960,13 +971,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1924" y="18" width="1920" height="1054" extended-state="0" />
-    <editor active="false" />
+    <frame x="-1930" y="0" width="1920" height="1054" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -984,11 +994,12 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19978632" sideWeight="0.67094016" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30929488" sideWeight="0.67094016" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21367522" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3246951" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1058,11 +1069,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/doc/intro.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tttmiddleware/interfaces/TTTFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="75" selection-start="173" selection-end="173" vertical-scroll-proportion="0.092449926">
@@ -1073,13 +1079,6 @@
     <entry file="jar://$MAVEN_REPOSITORY$/org/clojars/andrewzures/ruby_ttt/0.1.0-SNAPSHOT/ruby_ttt-0.1.0-SNAPSHOT.jar!/ruby_ttt/game.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/cloj_server/game_string_builder_spec.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="40" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1112,20 +1111,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/clojars/andrewzures/java-server/0.1.1-SNAPSHOT/java-server-0.1.1-SNAPSHOT.jar!/org/andrewzures/javaserver/responders/file404Responder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="50" selection-start="695" selection-end="695" vertical-scroll-proportion="0.31843576">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cloj_server/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="24" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/cloj_server/game_responder_spec.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="11" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.0">
@@ -1135,35 +1120,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/cloj_server/new_game_responder_spec.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="44" selection-start="979" selection-end="980" vertical-scroll-proportion="-15.0">
+        <state line="25" column="44" selection-start="979" selection-end="980" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cloj_server/game_responder.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="12" selection-start="603" selection-end="608" vertical-scroll-proportion="-11.4">
+        <state line="19" column="12" selection-start="603" selection-end="608" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cloj_server/new_game_responder.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="34" selection-start="220" selection-end="225" vertical-scroll-proportion="-2.4">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cloj_server/test_utility_methods.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="51" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0">
+        <state line="4" column="34" selection-start="220" selection-end="225" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/cloj_server/core_spec.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="70" selection-start="1328" selection-end="1328" vertical-scroll-proportion="0.41284403">
+        <state line="24" column="70" selection-start="1328" selection-end="1328" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/clojars/andrewzures/java-server/0.2.1-SNAPSHOT/java-server-0.2.1-SNAPSHOT.jar!/org/andrewzures/javaserver/server_and_sockets/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/clojars/andrewzures/java-server/0.1.1-SNAPSHOT/java-server-0.1.1-SNAPSHOT.jar!/org/andrewzures/javaserver/responders/file404Responder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="50" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/cloj_server/game_string_builder_spec.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="40" selection-start="408" selection-end="408" vertical-scroll-proportion="0.18435754">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cloj_server/test_utility_methods.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="52" selection-start="1584" selection-end="1584" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cloj_server/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="63" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.3886926">
           <folding />
         </state>
       </provider>

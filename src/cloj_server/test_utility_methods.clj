@@ -18,23 +18,29 @@
 
 (defn get-test-post-request []
   (let [request (new Request)
-        socket (new MockSocket)]
-    (.setInputStream socket "name=andrew&day=wednesday")
+        socket (new MockSocket)
+        test-content "name=andrew&day=wednesday"]
+    (.setInputStream socket test-content)
     (.setSocket request socket)
+    (.setContentLength request (count test-content))
     request))
 
 (defn get-test-game-request []
   (let [request (new Request)
-        socket (new MockSocket)]
-    (.setInputStream socket "player1=human&player2=human&game_type=three_by_three")
+        socket (new MockSocket)
+        test-content "player1=human&player2=human&game_type=three_by_three"]
+    (.setInputStream socket test-content)
     (.setSocket request socket)
+    (.setContentLength request (count test-content))
     request))
 
 (defn get-4x4-test-game-request []
   (let [request (new Request)
-        socket (new MockSocket)]
-    (.setInputStream socket "player1=human&player2=human&game_type=four_by_four")
+        socket (new MockSocket)
+        test-content "player1=human&player2=human&game_type=four_by_four"]
+    (.setInputStream socket test-content)
     (.setSocket request socket)
+    (.setContentLength request (count test-content))
     request))
 
 (defn get-test-move-request []
