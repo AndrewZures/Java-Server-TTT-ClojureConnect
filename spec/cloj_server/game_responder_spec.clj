@@ -4,8 +4,7 @@
            [org.andrewzures.javaserver Logger PostParser]
            [java.util HashMap]
            [tttmiddleware.interfaces Game]
-           [org.andrewzures.javaserver.response Response]
-           )
+           [org.andrewzures.javaserver.response Response])
   (:require [speclj.core :refer :all ]
             [cloj-server.game-responder :refer :all ]
             [cloj-server.test-utility-methods :refer :all]))

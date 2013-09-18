@@ -1,6 +1,5 @@
 (ns cloj-server.new-game-responder-spec
-  (:import [java.util HashMap]
-           [tttmiddleware.interfaces Game])
+  (:import [tttmiddleware.interfaces Game])
   (:require [speclj.core :refer :all ]
             [cloj-server.new-game-responder :refer :all ]
             [cloj-server.test-utility-methods :refer :all ]))
@@ -8,8 +7,7 @@
 (describe "new-game-responder"
 
   (it "creates a new game"
-    (let [game-map (new HashMap {String Game})
-          factory (ttt-factory)
+    (let [factory (ttt-factory)
           request (get-test-game-request)
           post-map (get-post-variable-hash (read-in-form-data request))
           game (get-new-game post-map factory)]
@@ -18,10 +16,12 @@
       (should= "human" (.getType (.getPlayer2 game)))
       (should= 3 (.getRowLength (.getBoard game)))))
 
-  (it "adds game to hash"
-    (let [map (new HashMap {String Game})
-          game (get-test-game)]
-      (should= 1 (.size map))
-      (add-game-to-hash map game)
-      (should= true (.containsKey map (.getID game)))
-      (should= 2 (.size map)))))
+  (it "adds games to atom"
+    (let [game-atom (atom {})
+          test-game (get-test-game)
+          second-game (get-test-game)]
+      (add-game-to-atom game-atom test-game)
+      (should= 1 (count (deref game-atom)))
+      (add-game-to-atom game-atom second-game)
+      (should= 2 (count (deref game-atom)))
+      )))

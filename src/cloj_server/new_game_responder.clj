@@ -12,6 +12,9 @@
 (defn add-game-to-hash [game-map game]
   (.put game-map (.getID game) game))
 
+(defn add-game-to-atom [game-atom game]
+  (swap! game-atom conj {(keyword (.getID game)) game}))
+
 (defn run-first-game-loop [game]
   (.runGameLoop game "player1" -1))
 
@@ -22,7 +25,7 @@
     (.getPlayer factory (.get post-map "player1") "X" "O" "player1")
     (.getPlayer factory (.get post-map "player2") "O" "X" "player2")))
 
-(defn new-game-handler [map]
+(defn new-game-handler [game-atom]
   (reify
     ResponderInterface
     (respond [this request]
@@ -31,7 +34,7 @@
             factory (ttt-factory)
             game (get-new-game post-map factory)
             ]
-        (add-game-to-hash map game)
+        (add-game-to-atom game-atom game)
         (run-first-game-loop game)
         (set-response-body response (build-game-string game))
         (build-success-response response)
