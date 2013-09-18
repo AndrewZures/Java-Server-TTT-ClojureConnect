@@ -9,6 +9,14 @@
             [cloj-server.game-responder :refer :all ]
             [cloj-server.test-utility-methods :refer :all]))
 
+(defn get-string-from-inputstream [input-stream]
+  (loop [result-string ""  c (.read input-stream)]
+    (if (not= c -1)
+      (do
+        ;            (print (char c))
+        (recur (str result-string (char c)) (.read input-stream)))
+      result-string)))
+
 (describe "clojure ResponderInterface responders"
 
   (it "gets post variable string from request"
@@ -36,9 +44,4 @@
   (it "sets response body"
     (let [response (new Response)]
       (set-response-body response "hello world")
-      ;104 = "h" but trouble converting from string,int,char
-      (should= (char 104) (char (.read (.getInputStream response))))
-      (should= (char 101) (char (.read (.getInputStream response))))
-      (should= (char 108) (char (.read (.getInputStream response))))
-      (should= (char 108) (char (.read (.getInputStream response))))
-      (should= (char 111) (char (.read (.getInputStream response)))))))
+      (should= "hello world" (get-string-from-inputstream (.getInputStream response))))))
