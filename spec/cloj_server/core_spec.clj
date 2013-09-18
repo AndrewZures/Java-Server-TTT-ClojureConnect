@@ -1,4 +1,4 @@
-(ns cloj-server.core-test
+(ns cloj-server.core-spec
   (:import [org.andrewzures.javaserver.responders DefaultInternalResponder ResponderInterface]
            [org.andrewzures.javaserver.server_and_sockets MyServerSocket]
            [org.andrewzures.javaserver Logger InputReader PostParser]

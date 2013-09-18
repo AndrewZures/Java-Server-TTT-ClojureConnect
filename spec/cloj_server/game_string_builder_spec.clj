@@ -9,14 +9,13 @@
 
   (it "has hidden player and board_id fields"
     (let [game (get-test-game)
-          post-map (get-valid-move-hash)
-          game-string (build-game-string game)]
+          post-map (get-valid-move-hash)]
       (should-contain
         (format "<input type=\"hidden\" name=\"board_id\" value=\"%s\" />" (.getID game))
-        game-string)
+        (build-game-string game))
       (should-contain
         "<input type=\"hidden\" name=\"player\" value=\"X\"/>"
-        game-string)))
+        (build-game-string game))))
 
   (it "has player2 for currentplayer and updatedboard after first pl1 move"
     (let [game (get-test-game)
