@@ -1,7 +1,7 @@
 (ns cloj-server.core-spec
   (:import [org.andrewzures.javaserver.responders DefaultInternalResponder ResponderInterface]
            [org.andrewzures.javaserver.server_and_sockets MyServerSocket]
-           [org.andrewzures.javaserver Logger InputReader PostParser]
+           [org.andrewzures.javaserver Logger PostParser]
            [org.andrewzures.javaserver.test.socket_test MockSocket]
            [org.andrewzures.javaserver.server_and_sockets Server])
   (:require [speclj.core :refer :all ]

@@ -1,6 +1,5 @@
 (ns cloj-server.test-utility-methods
-  (:import [org.andrewzures.javaserver InputReader]
-           [org.andrewzures.javaserver.request Request]
+  (:import [org.andrewzures.javaserver.request Request]
            [org.andrewzures.javaserver.test.socket_test MockSocket]
            [java.util HashMap]
            [org.jruby Ruby]
@@ -14,41 +13,35 @@
   (.getGame factory
     (str (gensym))
     (.getBoard factory (.get post-map "game_type"))
-;    (.getPlayer factory (.get post-map "player1") "X")
-;    (.getPlayer factory (.get post-map "player2") "O")))
     (.getPlayer factory "human" "X" "O" "player1")
     (.getPlayer factory "human" "O" "X" "player2")))
 
 (defn get-test-post-request []
   (let [request (new Request)
-        socket (new MockSocket)
-        reader (new InputReader socket)]
+        socket (new MockSocket)]
     (.setInputStream socket "name=andrew&day=wednesday")
-    (.setInputReader request reader)
+    (.setSocket request socket)
     request))
 
 (defn get-test-game-request []
   (let [request (new Request)
-        socket (new MockSocket)
-        reader (new InputReader socket)]
+        socket (new MockSocket)]
     (.setInputStream socket "player1=human&player2=human&game_type=three_by_three")
-    (.setInputReader request reader)
+    (.setSocket request socket)
     request))
 
 (defn get-4x4-test-game-request []
   (let [request (new Request)
-        socket (new MockSocket)
-        reader (new InputReader socket)]
+        socket (new MockSocket)]
     (.setInputStream socket "player1=human&player2=human&game_type=four_by_four")
-    (.setInputReader request reader)
+    (.setSocket request socket)
     request))
 
 (defn get-test-move-request []
   (let [request (new Request)
-        socket (new MockSocket)
-        reader (new InputReader socket)]
+        socket (new MockSocket)]
     (.setInputStream socket "move=1&player=X&board_id=1")
-    (.setInputReader request reader)
+    (.setSocket request socket)
     request))
 
 (defn get-valid-move-hash []

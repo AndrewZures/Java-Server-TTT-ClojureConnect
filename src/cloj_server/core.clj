@@ -1,6 +1,9 @@
 (ns cloj-server.core
   (:import [org.andrewzures.javaserver.server_and_sockets Server MyServerSocket]
-           [org.andrewzures.javaserver.responders DefaultInternalResponder ResponderInterface]
+           [org.andrewzures.javaserver.responders
+            DefaultInternalResponder
+            ResponderInterface
+            File404Responder]
            [org.andrewzures.javaserver Logger PostParser ArgumentParser]
            [java.util HashMap]
            [java.lang.String])
@@ -13,7 +16,7 @@
         server (new Server (.getPort parser) (.getPath parser) (new MyServerSocket) (new Logger))
         map (new HashMap {String ResponderInterface})]
 
-;    (.addRoute server "get" "/hello" (DefaultInternalResponder. "welcome.html"))
+   (.add404Responder server "get" "/hello" (File404Responder.))
     (.addRoute server "get" "/new_game" (DefaultInternalResponder. "introduction.html"))
     (.addRoute server "get" "/x_icon.png" (DefaultInternalResponder. "x_icon.png"))
     (.addRoute server "get" "/o_icon.png" (DefaultInternalResponder. "o_icon.png"))

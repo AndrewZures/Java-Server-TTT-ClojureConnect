@@ -1,7 +1,7 @@
 (ns cloj-server.new-game-responder-spec
   (:import [org.andrewzures.javaserver.request Request]
            [org.andrewzures.javaserver.test.socket_test MockSocket]
-           [org.andrewzures.javaserver Logger InputReader PostParser]
+           [org.andrewzures.javaserver Logger PostParser]
            [java.util HashMap]
            [tttmiddleware.interfaces Game]
            [org.andrewzures.javaserver.response Response]
@@ -22,10 +22,9 @@
 
   (it "builds hashmap of post variables"
     (let [request (new Request)
-          socket (new MockSocket)
-          reader (new InputReader socket)]
+          socket (new MockSocket)]
       (.setInputStream socket "name=andrew&day=wednesday")
-      (.setInputReader request reader)))
+      (.setSocket request socket)))
 
   (it "builds basic header"
     (let [response (build-success-response (new Response))]
