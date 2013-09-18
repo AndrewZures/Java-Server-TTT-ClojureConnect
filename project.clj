@@ -10,5 +10,5 @@
                  [org.clojars.andrewzures/ruby_ttt "0.1.3-SNAPSHOT"]
                  [org.clojars.andrewzures/jruby-lein "0.1.0-SNAPSHOT"]]
   :main cloj-server.core
-  :test-path "spec/"
+  :test-paths ["spec/"]
   )
