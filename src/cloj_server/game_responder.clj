@@ -13,7 +13,7 @@
 (defn read-in-form-data [request]
   (.getFormBody (new PostParser) request))
 
-(defn get-post-variable-hash [post-variable-string]
+(defn get-post-variables [post-variable-string]
   (.parsePostHash (new PostParser) post-variable-string))
 
 (defn set-response-body [response body-string]

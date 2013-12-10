@@ -61,7 +61,7 @@
   (let [game-map (new HashMap {String Game})
         factory (test-ttt-factory)
         request (get-test-game-request)
-        post-map (get-post-variable-hash (read-in-form-data request))
+        post-map (get-post-variables (read-in-form-data request))
         game (test-get-new-game post-map factory)]
     game))
 
@@ -69,6 +69,6 @@
   (let [game-map (new HashMap {String Game})
         factory (test-ttt-factory)
         request (get-4x4-test-game-request)
-        post-map (get-post-variable-hash (read-in-form-data request))
+        post-map (get-post-variables (read-in-form-data request))
         game (test-get-new-game post-map factory)]
     game))

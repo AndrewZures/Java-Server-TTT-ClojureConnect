@@ -11,5 +11,4 @@
                  [org.clojars.andrewzures/jruby-lein "0.1.0-SNAPSHOT"]]
   :main cloj-server.core
   :java-source-paths ["src/tttmiddleware/interfaces"]
-  :test-paths ["spec/"]
-  )
+  :test-paths ["spec/"])

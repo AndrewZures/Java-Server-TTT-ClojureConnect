@@ -2,7 +2,7 @@ To Run:
 
 1. lein deps
 2. lein run
-3. go to localhost:8189/new_game/
+3. go to localhost:8189
 
 Copyright © 2014
 

@@ -4,8 +4,7 @@
            [org.jruby Ruby]
            [java.io ByteArrayInputStream])
   (:require [cloj-server.game-responder :refer :all ]
-            [cloj-server.game-string-builder :refer :all ])
-  )
+            [cloj-server.game-string-builder :refer :all ]))
 
 (defn ttt-factory [] (.evalScriptlet (Ruby/newInstance) "require 'jfactory'; JFactory.new"))
 
@@ -30,12 +29,12 @@
     ResponderInterface
     (respond [this request]
       (let [response (new Response)
-            post-map (get-post-variable-hash (read-in-form-data request))
+            post-map (get-post-variables (read-in-form-data request))
             factory (ttt-factory)
             game (get-new-game post-map factory)
             ]
         (add-game-to-atom game-atom game)
         (run-first-game-loop game)
-        (set-response-body response (build-game-string game))
+        (set-response-body response (build-game game))
         (build-success-response response)
         response))))

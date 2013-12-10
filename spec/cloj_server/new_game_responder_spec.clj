@@ -2,6 +2,7 @@
   (:import [tttmiddleware.interfaces Game])
   (:require [speclj.core :refer :all ]
             [cloj-server.new-game-responder :refer :all ]
+            [cloj-server.game-responder :refer :all]
             [cloj-server.test-utility-methods :refer :all ]))
 
 (describe "new-game-responder"
@@ -9,7 +10,7 @@
   (it "creates a new game"
     (let [factory (ttt-factory)
           request (get-test-game-request)
-          post-map (get-post-variable-hash (read-in-form-data request))
+          post-map (get-post-variables (read-in-form-data request))
           game (get-new-game post-map factory)]
       (should= 3 (.size post-map))
       (should= "human" (.getType (.getPlayer1 game)))

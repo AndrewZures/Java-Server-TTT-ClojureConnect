@@ -13,18 +13,18 @@
   (loop [result-string ""  c (.read input-stream)]
     (if (not= c -1)
       (do
-        ;            (print (char c))
         (recur (str result-string (char c)) (.read input-stream)))
       result-string)))
 
 (describe "clojure ResponderInterface responders"
+
 
   (it "gets post variable string from request"
     (let [request (get-test-post-request)]
       (should= "name=andrew&day=wednesday" (read-in-form-data request))))
 
   (it "parses post string"
-    (let [hash-result (get-post-variable-hash "name=andrew&day=wednesday")]
+    (let [hash-result (get-post-variables "name=andrew&day=wednesday")]
       (should= "andrew" (.get hash-result "name"))))
 
   (it "builds hashmap of post variables"
