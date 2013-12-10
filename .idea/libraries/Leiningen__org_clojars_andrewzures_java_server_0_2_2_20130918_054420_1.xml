@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Leiningen: org.clojars.andrewzures:java-server:0.2.2-20130918.054420-1">
-    <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/clojars/andrewzures/java-server/0.2.2-SNAPSHOT/java-server-0.2.2-SNAPSHOT.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
