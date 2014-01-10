@@ -2,8 +2,7 @@
   (:require [speclj.core :refer :all ]
             [cloj-server.core :refer :all ]
             [cloj-server.game-string-builder :refer :all ]
-            [cloj-server.test-utility-methods :refer :all]
-             ))
+            [cloj-server.test-utility-methods :refer :all]))
 
 (defn adjust-player-string [string]
   (if (= "X" string) "player1" "player2"))
